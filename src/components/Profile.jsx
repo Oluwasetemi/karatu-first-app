@@ -1,5 +1,6 @@
 import Avatar from "./Avatar"
 
+// Parent -> Child
 // prop forwarding and spreading props
 function Profile(props) {
   return (

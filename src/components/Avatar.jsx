@@ -31,6 +31,8 @@
 //   )
 // }
 
+<Avatar person={{ id: 'abc', name: 'bryan' }} size={'200'} />
+
 // function Avatar(props) {
 //   let person = props.person;
 //   let size = props.size;
