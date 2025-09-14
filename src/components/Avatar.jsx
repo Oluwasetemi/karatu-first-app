@@ -54,6 +54,33 @@
 //   )
 // }
 
+// function Avatar(props) {
+//   return (
+//     <img
+//       src={`https://i.imgur.com/${props.person.id}.jpg`}
+//       alt={props.person.name}
+//       width={props.size}
+//       height={props.size}
+//     />
+//   )
+// }
+
+// <Avatar person={{ id: 'abc', name: 'bryan' }} size={'200'} />
+
+// function Avatar(props) {
+//   let person = props.person;
+//   let size = props.size;
+
+//   return (
+//     <img
+//       src={`https://i.imgur.com/${person.id}.jpg`}
+//       alt={person.name}
+//       width={size}
+//       height={size}
+//     />
+//   )
+// }
+
 // object and array destructuring
 // const [count, setCount] = [1, 2, 3];
 // let count = state[0];

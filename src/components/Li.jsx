@@ -13,4 +13,10 @@ function Li({ name, job, email }) {
   )
 }
 
+<Li 
+  name="Oluwasetemi" 
+  job="Software Engineer" 
+  email="setemi@altschoolafrica.wonder" 
+/>
+
 export default Li;
