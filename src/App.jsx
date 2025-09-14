@@ -1,12 +1,14 @@
-import './App.css'
-import { Greeting } from './components/Greeting'
-import React from 'react'
-import Header from './components/Header'
-import Content from './components/Content'
-import Footer from './components/Footer'
-import Avatar from './components/Avatar'
-import Li from './components/Li'
-
+import "./App.css";
+import { Greeting } from "./components/Greeting";
+import React from "react";
+import Header from "./components/Header";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
+import Avatar from "./components/Avatar";
+import Profile from "./components/Profile";
+import Counter from "./components/Counter";
+import Li from "./components/Li";
+import data from "../data"
 
 // Parent Component
 function Blog() {
@@ -20,27 +22,21 @@ function Blog() {
       {/* Footer is a child */}
       <Footer />
     </section>
-  )
+  );
 }
 
 function App() {
+  let newValue = <Header children={"Hello"} />;
 
   return (
     <React.Fragment>
-      <h1> React Component </h1>
-      <Header children={"Hello"} />
-      <Header>This a Children Header</Header>
-      <Greeting name={"Khadijah Kabir"} list={['Khadijah', 'Kabir', 'Kabiru', 'Kabirat', 'Kabirudeen']} />
-      {Greeting({ name: 'Oluwasetemi Ojo', list: ['Oluwasetemi', 'Ojo', 'Ojoade', 'Ojoadeyemi'] })}
-      <Blog />
-      <Content />
-      <Footer />
-
-      <ul>
-        <Li key={1} name="XY. Z" email="email@email.com" job="plumber" />
+      <ul style={{ listStyleType: "none" }}>
+        {data.map((person) => 
+          <Li key={crypto.randomUUID()} name={person?.name} email={person?.email} job={person?.job} />
+        )}
       </ul>
     </React.Fragment>
-  )
+  );
 }
 
-export default App
+export default App;
